@@ -27,25 +27,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -56,9 +62,11 @@ table {
 /****************/
 
 .main-nav {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
     width: 100%;
     background: rgba(224, 169, 165, 0.7);
-    min-height: 30px;
     padding: 10px;
     position: fixed;
     text-align: center;
@@ -70,33 +78,41 @@ table {
 .nav {
     width: 80%;
     display: flex;
+    align-content: center;
     justify-content: space-between;
     font-weight: 300;
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
 }
+
 .nav ul {
     list-style-type: none;
+    width: 200px;
+}
+.nav-links {
     width: 180px;
+    display: flex;
+    justify-content: space-between;
 }
 body {
-    margin-top: 68px;
+    margin-top: 88px;
     background: rgba(173, 208, 230, 0.82);
     font-family: 'Raleway', sans-serif;
 }
+
 .section1 {
     width: 80%;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
-    /*position: relative;*/
 }
+
 .section1 p {
-    /*display: inline-block;*/
-    padding: 10px;
-    background: rgba(208, 207, 235, 1);
-    /*position: absolute;*/
+    font-size: 20px;
+    padding: 20px;
+
 }
+
 .profile-image {
     display: inline-block;
     float: right;
