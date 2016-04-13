@@ -1,7 +1,11 @@
+/***************/
+/* Style Resets */
+/****************/
+
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0b1 | 201101
-   NOTE: WORK IN PROGRESS
-   USE WITH CAUTION AND TEST WITH ABANDON */
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,57 +16,75 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    outline: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
 body {
     line-height: 1;
 }
-
 ol, ul {
     list-style: none;
 }
-
 blockquote, q {
     quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
-
-/* remember to define visible focus styles!
-:focus {
-	outline: ?????;
-} */
-
-/* remember to highlight inserts somehow! */
-ins {
-    text-decoration: none;
-}
-
-del {
-    text-decoration: line-through;
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/***************/
+/* Main Styles */
+/****************/
+
+.main-nav {
+    width: 100%;
+    background: rgba(224, 169, 165, 0.7);
+    min-height: 30px;
+    padding: 10px;
+    /*position: fixed;*/
+    text-align: center;
+    transition: background-color .6s;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+.nav ul {
+    list-style-type: none;
+    width: 180px;
+}
+body {
+    top: 60px;
+}
+.section1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
