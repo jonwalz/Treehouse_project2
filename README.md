@@ -1,0 +1,1 @@
+This is the second project for the treehouse front-end techdegree.
