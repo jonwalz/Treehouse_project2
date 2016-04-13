@@ -110,13 +110,14 @@ a:hover {
 }
 
 body {
-    margin-top: 88px;
+    margin-top: 60px;
     background: rgba(237, 237, 237, 0.82);
     font-family: 'Raleway', sans-serif;
 }
 
 .section1 {
     width: 80%;
+    padding: 60px;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
 }
@@ -142,29 +143,69 @@ body {
 **************************/
 
 .portfolio {
-    padding: 20px;
+    padding: 60px;
     text-align: center;
     min-height: 300px;
     background: rgb(217, 249, 250);
 }
 
+.portfolio-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .portfolio h1 {
     font-weight: 600;
 }
-
+.portfolio .col {
+    display: inline-block;
+    width: 30%;
+    di
+}
+.portfolio .col img {
+    width: 100%;
+}
 /*************************
     Contact Section
 **************************/
 
 .contact {
-    padding: 20px;
+    padding: 60px;
     text-align: center;
     min-height: 300px;
     background: rgb(250, 229, 231);
 }
 
+.contact-container {
+    margin: 0 auto;
+}
+
+.contact > * {
+    padding: 10px;
+}
+
 .contact h1 {
     font-weight: 600;
+}
+
+.info-list {
+    padding: 60px;
+}
+
+.info-list li {
+    padding: 10px;
+}
+
+.info {
+    font-weight: 600;
+}
+
+/*************************
+    Footer
+**************************/
+
+.footer {
+    min-height: 60px;
 }
 
 /***************
