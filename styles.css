@@ -86,6 +86,11 @@ a:hover {
     z-index: 1;
 }
 
+#student-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .nav {
     color: white;
     width: 80%;
@@ -99,6 +104,8 @@ a:hover {
 }
 
 .nav ul {
+    display: flex;
+    align-content: center;
     list-style-type: none;
     width: 200px;
 }
@@ -107,6 +114,11 @@ a:hover {
     width: 180px;
     display: flex;
     justify-content: space-between;
+}
+
+.nav-links li {
+    display: flex;
+    align-content: center;
 }
 
 body {
@@ -150,21 +162,24 @@ body {
 }
 
 .portfolio-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .portfolio h1 {
     font-weight: 600;
 }
+
 .portfolio .col {
     display: inline-block;
     width: 30%;
     di
 }
+
 .portfolio .col img {
     width: 100%;
 }
+
 /*************************
     Contact Section
 **************************/
@@ -216,4 +231,62 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+/***************
+  Tablet Styles
+***************/
+
+@media (max-width: 1024px) {
+    .nav {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav .nav-links {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .nav .nav-links li {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .portfolio {
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio .col {
+        width: 40%;
+    }
+    .profile-image {
+        width: 40%;
+    }
+}
+
+/***************
+  Mobile Styles
+***************/
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio .col {
+        width: 80%;
+    }
 }
