@@ -1,0 +1,423 @@
+/***************/
+/* Style Resets */
+/****************/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #e8e9ff;
+}
+
+/***************
+   Main Styles
+****************/
+* {
+    box-sizing: border-box;
+    color: #6487F0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    width: 100%;
+    background: #4A63B0;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    transition: background-color .6s;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    color: white;
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+#student-name {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav ul {
+    display: flex;
+    align-content: center;
+    list-style-type: none;
+    width: 200px;
+}
+
+.nav-links {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    display: flex;
+    align-content: center;
+}
+
+.nav-links li a {
+    padding: 10px;
+}
+
+body {
+    margin-top: 60px;
+    background: #2A3863;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section1 {
+    width: 80%;
+    padding: 60px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section1 p {
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+.profile-image {
+    padding-left: 20px;
+    display: inline-block;
+    float: right;
+    right: 0;
+}
+
+.col {
+    width: 30%;
+    padding-right: 10px;
+}
+
+/*************************
+    Portfolio Section
+**************************/
+
+.portfolio {
+    text-align: center;
+    min-height: 300px;
+    background: rgb(217, 249, 250);
+}
+
+.portfolio-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio h1 {
+    font-weight: 600;
+    padding: 40px 0;
+}
+
+.portfolio .col {
+    display: inline-block;
+    width: 30%;
+}
+
+.portfolio .col img {
+    width: 100%;
+}
+
+.info-card {
+    padding: 20px;
+}
+
+.info-card h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*************************
+    Skills
+**************************/
+
+#skills {
+    min-height: 400px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#skills h1 {
+    font-weight: 600;
+}
+.skills-list {
+    padding: 40px 0;
+    text-align: auto;
+    line-height:30px;
+}
+.skills-list li {
+    margin: 10px auto;
+    padding: 10px;
+    background: #91b4fe;
+    width: 80%;
+    color: white;
+    transition-property: background, box-shadow;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+}
+.skills-list li:hover {
+    background: #aee9ff;
+    box-shadow: inset 0 0 10px #e934ff;
+    }
+/*************************
+    Contact Section
+**************************/
+.contact {
+    padding: 60px;
+    text-align: center;
+    min-height: 300px;
+    background: rgb(212, 201, 250);
+}
+
+.contact-container {
+    margin: 0 auto;
+}
+
+.contact > * {
+    padding: 10px;
+}
+
+.contact h1 {
+    font-weight: 600;
+}
+
+.info-list {
+    padding: 60px;
+}
+
+.info-list li {
+    padding: 10px;
+}
+
+.info {
+    font-weight: 600;
+}
+
+/*************************
+    Footer
+**************************/
+
+.footer {
+    min-height: 60px;
+}
+
+/***************
+    Clearfix
+***************/
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/***************
+  Tablet Styles
+***************/
+
+@media (max-width: 1024px) {
+    body {
+        margin-top: 136px;
+    }
+
+    .nav {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav .nav-links {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .nav .nav-links li {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .nav .nav-links li a {
+        align-self: center;
+        padding: 10px;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio-container h1 {
+        padding: 40px 0;
+    }
+
+    .portfolio .col {
+        width: 40%;
+    }
+
+    .profile-image {
+        width: 40%;
+        min-width: 255px;
+    }
+}
+
+/***************
+  Mobile Styles
+***************/
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 284px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nav-links li {
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        color: #a9a9a9;
+        display: block;
+        padding: 10px 100px;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio-container h1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .portfolio .col {
+        width: 80%;
+    }
+
+    .section1 {
+        padding: 60px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section1 p {
+        display: block;
+    }
+
+    .profile-image {
+        padding: 0;
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 367px;
+    }
+
+    .info-card {
+        padding: 40px 0;
+    }
+
+    .info-card h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .info-list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+    }
+}
