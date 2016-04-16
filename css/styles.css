@@ -309,7 +309,9 @@ body {
     display: flex;
 
 }
-
+.mobile-footer-nav {
+    display: none;
+}
 /***************
     Clearfix
 ***************/
