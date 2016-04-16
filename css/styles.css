@@ -459,4 +459,7 @@ body {
     .footer-nav {
         display: none;
     }
+    .mobile-footer-nav {
+        display: block;
+    }
 }
