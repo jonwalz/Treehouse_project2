@@ -344,6 +344,9 @@ body {
 ***************/
 
 @media (max-width: 1024px) {
+    body {
+        margin-top: 0;
+    }
 
     .nav {
         display: block;
@@ -398,6 +401,9 @@ body {
 ***************/
 
 @media (max-width: 768px) {
+    body {
+        margin-top: 0;
+    }
 
     .nav-links {
         display: flex;
