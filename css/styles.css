@@ -324,9 +324,11 @@ body {
     display: flex;
 
 }
+
 .mobile-footer-nav {
     display: none;
 }
+
 /***************
     Clearfix
 ***************/
@@ -366,6 +368,10 @@ body {
     .nav .nav-links li a {
         align-self: center;
         padding: 10px;
+    }
+
+    .main-nav {
+        position: static;
     }
 
     .portfolio {
@@ -416,6 +422,10 @@ body {
         color: #a9a9a9;
         display: block;
         padding: 10px 100px;
+    }
+
+    .main-nav {
+        position: static;
     }
 
     .portfolio {
@@ -474,6 +484,7 @@ body {
     .footer-nav {
         display: none;
     }
+
     .mobile-footer-nav {
         display: block;
     }
