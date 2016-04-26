@@ -19,7 +19,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-csslint": "^0.3.0",
+    "gulp-cssmin": "^0.1.7",
     "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
     "jshint": "^2.9.2",
     "jslint": "^0.9.6"
   },
